@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
-# Build helper for the prepared checkout. This is intentionally conservative:
-# it does not flash anything and it stops before pretending hardware is tested.
+# Build helper. It does not flash a phone or claim hardware validation.
 set -euo pipefail
+
+if [[ ! -f build/envsetup.sh ]]; then
+  echo "Run this from the root of a full Android source checkout." >&2
+  exit 1
+fi
 
 source build/envsetup.sh
 lunch lineage_onclite-userdebug

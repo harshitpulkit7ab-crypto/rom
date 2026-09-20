@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Android 16/LineageOS 23.0 preparation manifest for Redmi Y3 onc.
-         The device/vendor/kernel repositories currently provide lineage-22.1
-         sources; keep these revisions explicit until their Android 16 ports exist. -->
+    <!-- Android 16 framework target with an independently pinned, known
+         hardware baseline. This is not a claim that 22.1 builds unchanged. -->
     <remote name="github" fetch="https://github.com/" revision="lineage-23.0" />
 
     <project name="onclite/android_device_xiaomi_onclite"
@@ -14,7 +13,11 @@
              remote="github"
              revision="lineage-22.1" />
     <project name="onclite/android_kernel_xiaomi_onc"
-             path="kernel/xiaomi/onc"
+             path="kernel/xiaomi/onclite"
+             remote="github"
+             revision="lineage-22.1" />
+    <project name="LineageOS/android_hardware_xiaomi"
+             path="hardware/xiaomi"
              remote="github"
              revision="lineage-22.1" />
 </manifest>
