@@ -1,0 +1,10 @@
+# Recovery fstab skeleton
+# Replace with exact Redmi Y3 stock layout before flashing a real build.
+
+/system   ext4   /dev/block/bootdevice/by-name/system
+/vendor   ext4   /dev/block/bootdevice/by-name/vendor
+/data     ext4   /dev/block/bootdevice/by-name/userdata
+/cache    ext4   /dev/block/bootdevice/by-name/cache
+/boot     emmc   /dev/block/bootdevice/by-name/boot
+/recovery emmc   /dev/block/bootdevice/by-name/recovery
+/misc     emmc   /dev/block/bootdevice/by-name/misc

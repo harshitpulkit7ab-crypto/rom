@@ -1,9 +1,13 @@
-# Dependencies
-.psci_modules
-.spago
-bower_components
-node_modules
+# Git ignore for Android ROM project
 
-# Generated files
-.psci
-output
+.idea/
+.vscode/
+*.iml
+*.log
+out/
+*.zip
+*.img
+*.bin
+*.tmp
+*.swp
+*.bak
