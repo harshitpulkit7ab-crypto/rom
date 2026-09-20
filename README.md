@@ -1,14 +1,5 @@
-# Pixel-like Android 16 Lite ROM for Redmi Y3 (`onc`)
+# Redmi Y3 Android 16 Lite tree
 
-This repository prepares an **Android 16 Lite** target for the Redmi Y3. The goal is a lightweight Android 16 experience with a new Control Center and Material 3 dynamic theming, while retaining the public `onclite` hardware baseline.
+The project uses the supplied archived PE/AOSP `onclite` device tree as the hardware reference and ports it toward Android 16. The target remains a lightweight Android 16 ROM for the 3 GB Redmi Y3 with Material 3 dynamic theming and a redesigned Control Center.
 
-The project is not a complete source mirror of Android. The full framework checkout must be obtained with Repo using the manifest under `manifests/`, then the device, kernel, and vendor projects must be synced.
-
-See:
-
-- `docs/android16-lite-product.md`
-- `docs/material3-control-center.md`
-- `docs/source-layout.md`
-- `docs/status.md`
-
-No flashable image is currently produced by this repository. Framework UI changes must be implemented and compiled inside the full Android 16 checkout, then tested on a real Redmi Y3.
+Use `manifests/onc.xml` and `docs/android16-tree-migration.md` for the exact source selection and migration requirements.

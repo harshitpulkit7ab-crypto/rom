@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Android 16 framework target with an independently pinned, known
-         hardware baseline. This is not a claim that 22.1 builds unchanged. -->
+    <!-- Android 16 framework target. The device tree below is an Android 14
+         reference and requires the documented migration work before building. -->
     <remote name="github" fetch="https://github.com/" revision="lineage-23.0" />
 
-    <project name="onclite/android_device_xiaomi_onclite"
+    <!-- PE/AOSP onclite reference tree supplied for this port. It is archived
+         and pinned to branch 14; it is not claimed to be Android 16-ready. -->
+    <project name="afterallafk/device_xiaomi_onclite"
              path="device/xiaomi/onclite"
              remote="github"
-             revision="lineage-22.1" />
+             revision="14" />
     <project name="onclite/android_vendor_xiaomi_onclite"
              path="vendor/xiaomi/onclite"
              remote="github"
